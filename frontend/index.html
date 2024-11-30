@@ -3,32 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Yun Ni - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Website</h1>
+        <h1>Yun Ni</h1>
     </header>
     
     <main>
         <section id="about">
-            <img src="path/to/your_photo.jpg" alt="My Photo" id="profile-photo">
-            <p>Hi! I’m [Your Name], a computer science student passionate about technology and software development. This website showcases my projects and interests.</p>
+            <img src="rsc/me.jpg" alt="Yun Ni" id="profile-photo">
         </section>
 
-        <section id="links">
-            <h2>Links</h2>
+        <section id="about-text">
+            <h2>About</h2>
+            <p>Hi! I'm Yun Ni, a computer science student with a strong passion for technology, software development, and solving complex problems. With a deep interest in areas such as artificial intelligence, cryptography, and system design, I strive to apply my knowledge through hands-on projects that explore innovative solutions. This website serves as a portfolio to showcase my academic journey, coding projects, and research endeavors, reflecting my commitment to learning and contributing to the tech community.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Nanjing University</strong> (Sep 2021 - Jun 2025)</p>
+            <p>Bachelor of Science in Computer Science</p>
+            <p>GPA: 4.63/5.00 (Rank: 5/209), Major GPA: 4.62/5.00 (Rank: 2/209)</p>
+            <p><strong>Relevant Courses:</strong> Data Processing (100), Optimal Control and Reinforcement Learning (99.3), Elements of Cryptography (99), Introduction to Computer Systems (99), Probability Theory and Mathematical Statistics (98), Training of Scientific Research (97), Algorithm Design and Analysis (96), Data Structures (96), Linear Algebra (96)</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-cards">
+                <div class="experience-card">
+                    <h3>Microsoft Research Asia, Networking Infrastructure Group</h3>
+                    <p><strong>Research Intern</strong> (Jul 2024 - Present)</p>
+                    <ul>
+                        <li>Participated in research on route scaling within Microsoft Azure system to address routing table load growth.</li>
+                        <li>Designed a robust system architecture and policy generating algorithms to optimize storage requirements for future use.</li>
+                        <li>Utilized Azure Kusto for in-depth data analysis and decision making, leveraging data from IPFIX and Azure Core Tool.</li>
+                        <li>Employed LLM-driven analysis for algorithm generation and utilized Convex Optimization for parameter assignment.</li>
+                        <li>Collaborated with team members on predictive modeling to substantiate the motivation behind proposed solutions.</li>
+                        <li>Collaborated with Azure and WAN product teams to enforce and test performance metrics, ensuring system reliability.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3>Nanjing University COSEC Group</h3>
+                    <p><strong>Undergraduate Student</strong> (Aug 2022 - Present)</p>
+                    <ul>
+                        <li>Conducted research in Cryptography to optimize a single-server PIR scheme based on Function Secret Sharing (FSS).</li>
+                        <li>Introduced a 2-layer hint subset data structure innovation to reduce the algorithm's amortized time complexity.</li>
+                        <li>Implemented parameterization method, ensuring time complexity minimizes while maintaining storage capacity.</li>
+                        <li>Independently conducted thorough experiments to prove the relationship between complexity and parameters.</li>
+                        <li>Drafted a research paper detailing the optimization results and theoretical findings of the project for future publication.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3><a href="https://github.com/yun-ni-2024/online-music-editor.git">Online Music Editor</a> (Jul 2024)</h3>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Node.js, MongoDB, Socket.IO</p>
+                    <ul>
+                        <li>Developed an online music editing platform allowing users to create, edit, and play music directly in the browser.</li>
+                        <li>Implemented real-time collaboration features, enabling multiple users to simultaneously edit with synchronized states.</li>
+                        <li>Designed a user-friendly interface to lower the learning curve and facilitate quick and easy music creation for users.</li>
+                        <li>Built community sharing functionalities, allowing users to showcase and enjoy music creations from others in a gallery.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3><a href="https://github.com/yun-ni-2024/Sentiment-and-Genre-Classifier.git">Sentiment and Genre Classifier</a> (May 2024)</h3>
+                    <p><strong>Technologies:</strong> Hadoop, MapReduce, Java, Website, AJAX, Flask</p>
+                    <ul>
+                        <li>Utilized MapReduce to process large-scale music data, including preprocessing, data cleaning, and feature extraction.</li>
+                        <li>Developed sentiment prediction and genre classification based on TF-IDF calculation of lyrics using Bayes Classifier.</li>
+                        <li>Implemented a website interaction system separating backend calculations from the frontend GUI for user interaction.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3><a href="https://github.com/yun-ni-2024/tower-defense-game.git">Tower Defense Game</a> (Jan 2023)</h3>
+                    <p><strong>Technologies:</strong> C++, Qt</p>
+                    <ul>
+                        <li>Developed a classic tower defense game where players place towers to defend against enemies with strategic placement.</li>
+                        <li>Implemented multiple tower and enemy types, and the acquisition of affixes, adding complexity and strategic depth.</li>
+                        <li>Designed a dynamic map editing system allowing players to edit and customize maps according to their preferences.</li>
+                        <li>Included custom settings for players to adjust various gameplay elements and enhance their gaming experience.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3><a href="https://github.com/yun-ni-2024/Simple-Computer-System.git">Simple Computer System</a> (Nov 2022)</h3>
+                    <p><strong>Technologies:</strong> Verilog, C, RISC-V Compiler Toolchain, Vivado</p>
+                    <ul>
+                        <li>Designed a 5-stage pipeline CPU with Verilog and an operating system in C, which is compiled to RISC-V instructions.</li>
+                        <li>Implemented a simple UI, supporting character input with case sensitivity, deletion, text wrapping, and screen scrolling.</li>
+                        <li>Supported keyboard input for commands, including echoing input, showing time, and calculating arithmetic expressions.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
             <ul>
-                <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-                <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
-                <li><a href="https://yourblog.com" target="_blank">Blog</a></li>
+                <li><strong>Languages:</strong> Python, Java, C/C++, Verilog, SQL (Kusto), Scala, Website (HTML, CSS, JavaScript), Shell</li>
+                <li><strong>Developer Tools:</strong> Git, VS Code, Visual Studio, Xilinx Vivado, IntelliJ IDEA, Maven, Gradle, Qt Creator</li>
+                <strong>Technologies/Frameworks:</strong> Azure, Linux, Hadoop, OpenAI API, PyTorch, Node.js, Flask, MongoDB, Socket.IO
             </ul>
         </section>
     </main>
     
     <footer>
-        <p>&copy; 2024 My Personal Website</p>
+        <p>&copy; 2024 Yun Ni. All rights reserved.</p>
     </footer>
     
     <script src="script.js"></script>
